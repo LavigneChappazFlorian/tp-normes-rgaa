@@ -17,6 +17,7 @@
         <li><a href="#accueil">Accueil</a></li>
         <li><a href="#tutoriels">Tutoriels</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="accessibilite.html">Accessibilité</a></li>
       </ul>
     </nav>
   </header>
@@ -33,21 +34,23 @@
       </div>
     </section>
     <section class="tutos" id="tutoriels">
-      <div class="filters">
+      <div class="filters" aria-live="polite">
         <h3 aria-label="filters-form-title">Filtres</h3>
         <hr />
         <form action="" method="GET" id="filters-form">
           <div>
-            <input type="checkbox" name="filter" id="front-end" value="front-end" aria-label="Filtre - développement Front-end"/>
+            <input type="checkbox" name="filter" id="front-end" value="front-end"
+              aria-label="Filtre - développement Front-end" />
             <label for="front-end">Développement Front </label>
           </div>
           <div>
-            <input type="checkbox" name="filter" id="design" value="design" aria-label="Filtre - Design />
+            <input type="checkbox" name="filter" id="design" value="design" aria-label="Filtre - Design" />
             <label for="design">Design</label>
           </div>
           <div>
-            <input type="checkbox" name="filter" id="beginner" value="beginner" aria-label="Filtre - Pour les débutants"/>
-            <label for="beginner"> Programmation pour débutant </label> 
+            <input type="checkbox" name="filter" id="beginner" value="beginner"
+              aria-label="Filtre - Pour les débutants" />
+            <label for="beginner"> Programmation pour débutant </label>
           </div>
         </form>
       </div>
@@ -59,7 +62,7 @@
         <div class="list">
           <article>
             <div class="head-img">
-              <img src="./assets/img/header.png"  alt="Illustration pour une vidéo sur les bases du HTML"/>
+              <img src="./assets/img/header.png" alt="Illustration pour une vidéo sur les bases du HTML" />
             </div>
             <div class="content">
               <div>
@@ -74,7 +77,7 @@
           </article>
           <article>
             <div class="head-img">
-              <img src="./assets/img/header.png" alt="Illustration pour une vidéo sur les bases du CSS"/>
+              <img src="./assets/img/header.png" alt="Illustration pour une vidéo sur les bases du CSS" />
             </div>
             <div class="content">
               <div>
@@ -88,7 +91,7 @@
           </article>
           <article>
             <div class="head-img">
-              <img src="./assets/img/header.png" alt="Illustration pour une vidéo sur les bases du JavaScript"/>
+              <img src="./assets/img/header.png" alt="Illustration pour une vidéo sur les bases du JavaScript" />
             </div>
             <div class="content">
               <div>
@@ -102,7 +105,8 @@
           </article>
           <article>
             <div class="head-img">
-              <img src="./assets/img/header.png" alt="Illustration pour une vidéo sur les bases de la DOM en JavaScript"/>
+              <img src="./assets/img/header.png"
+                alt="Illustration pour une vidéo sur les bases de la DOM en JavaScript" />
             </div>
             <div class="content">
               <div>
@@ -117,7 +121,8 @@
           </article>
           <article>
             <div class="head-img">
-              <img src="./assets/img/header.png" alt="Illustration pour une vidéo sur les bonnes polices et les couleurs"/>
+              <img src="./assets/img/header.png"
+                alt="Illustration pour une vidéo sur les bonnes polices et les couleurs" />
             </div>
             <div class="content">
               <div>
@@ -136,7 +141,7 @@
   <footer>
     <div class="footer-content" id="contact">
       <div class="footer-left">
-        <img src="./assets/img/logo-la-manu.png" alt=""/>
+        <img src="./assets/img/logo-la-manu.png" alt="Logo La Manu - Ecole Supérieur des métiers du numérique" />
         <h3>Menu :</h3>
         <ul>
           <li><a href="#accueil">Accueil</a></li>
@@ -161,7 +166,7 @@
             <textarea name="message" id="message" placeholder="Message ..."></textarea>
           </div>
           <div class="form-full-width">
-            <input id="conditions" type="radio" required />
+            <input id="conditions" type="radio" required aria-required="true" />
             <label for="conditions">J'accepte les conditions d'utilisation</label>
           </div>
           <button type="submit" class="pink-btn" aria-label="Envoyer le formulaire">Envoyer</button>
